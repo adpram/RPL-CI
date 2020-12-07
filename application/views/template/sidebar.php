@@ -19,55 +19,42 @@
 
 				<ul class="nav">
 					<li>
-						<a href="dashboard.html">
+						<a href="<?= site_url('home') ?>">
 							<i class="pe-7s-graph"></i>
-							<p>Dashboard</p>
+							<p>Beranda</p>
+						</a>
+					</li>
+					<li>
+						<a href="<?= site_url('user')?>">
+							<i class="pe-7s-user"></i>
+							<p>Data Admin</p>
 						</a>
 					</li>
 					<li>
 						<a href="<?= site_url('car')?>">
 							<i class="pe-7s-car"></i>
-							<p>Car List</p>
+							<p>Data Mobil</p>
 						</a>
 					</li>
 					<li>
-						<a href="table.html">
-							<i class="pe-7s-note2"></i>
-							<p>Table List</p>
+						<a href="<?= site_url('customer')?>">
+							<i class="pe-7s-users"></i>
+							<p>Data Peminjam</p>
 						</a>
 					</li>
+
+				</ul>
+
+
+				<div class="logo">
+				</div>
+				<ul class="nav">
 					<li>
-						<a href="typography.html">
-							<i class="pe-7s-news-paper"></i>
-							<p>Typography</p>
-						</a>
-					</li>
-					<li>
-						<a href="icons.html">
-							<i class="pe-7s-science"></i>
-							<p>Icons</p>
-						</a>
-					</li>
-					<li>
-						<a href="maps.html">
-							<i class="pe-7s-map-marker"></i>
-							<p>Maps</p>
-						</a>
-					</li>
-					<li>
-						<a href="notifications.html">
-							<i class="pe-7s-bell"></i>
-							<p>Notifications</p>
-						</a>
-					</li>
-					<li class="active-pro">
-						<a href="upgrade.html">
-							<i class="pe-7s-rocket"></i>
-							<p>Upgrade to PRO</p>
+						<a href="<?= site_url('transaction') ?>">
+							<i class="pe-7s-menu"></i>
+							<p>Transaksi Rental</p>
 						</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-
-		

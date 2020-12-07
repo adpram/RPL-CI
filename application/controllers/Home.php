@@ -10,11 +10,16 @@ class Home extends CI_Controller {
 		if ( $this->user_model->isNotLogin() ) {
 			redirect(site_url('login'));
 		}
+		$this->load->model("chart_model");
 	}	
 
 	public function index()
 	{
 		$data['content'] = 'home';
+		$carChart = $this->chart_model->getCars()->result();
+		$data['carChart'] = json_encode($carChart);
+		$transactionChart = $this->chart_model->getTransactions()->result();
+		$data['transactionChart'] = json_encode($transactionChart);
 		$this->load->view('template/content', $data);
 	}
 }

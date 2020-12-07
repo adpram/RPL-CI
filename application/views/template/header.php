@@ -10,18 +10,19 @@
     
     <!-- Bootstrap core CSS     -->
     <link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet" />
-
+    
     <!-- Animation library for notifications   -->
     <link href="<?php echo base_url() ?>assets/css/animate.min.css" rel="stylesheet"/>
-
+    
     <!--  Light Bootstrap Table core CSS    -->
     <link href="<?php echo base_url() ?>assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
-
-
+    
+    
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="<?php echo base_url() ?>assets/css/demo.css" rel="stylesheet" />
-
-
+    
+    <link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>

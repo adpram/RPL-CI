@@ -141,7 +141,7 @@
                                                 <select name="status" id="" class="form-control">
                                                     <option value="0" <?php if($row->status == 0) {echo 'selected="selected"';};?>>Tersedia</option>
                                                     <option value="1" <?php if($row->status == 1) {echo 'selected="selected"';};?>>Tidak Tersedia</option>
-                                                    <option value="2" <?php if($row->status != 0 || $row->status != 1) {echo 'selected="selected"';};?>>Dalam Perbaikan</option>
+                                                    <option value="2" <?php if($row->status == 2) {echo 'selected="selected"';};?>>Dalam Perbaikan</option>
                                                 </select>
                                             </div>
                                         </div>

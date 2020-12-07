@@ -88,4 +88,11 @@ class Car extends CI_Controller {
 		$this->car_model->destroyData($where,'cars');
 		redirect('car/index');
 	}
+
+	public function getCar($id)
+	{
+		$where = array('id' => $id);
+		$car = $this->car_model->editData($where,'cars')->result();
+		echo json_encode($car);
+	}
 }

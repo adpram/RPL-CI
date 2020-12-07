@@ -14,6 +14,9 @@ class Login extends CI_Controller {
         if ( $this->input->post() ) {
             if ( $this->user_model->doLogin() ) {
                 redirect(site_url('home'));
+            } else {
+                $data["error"]="Invalid User Id and Password combination";
+                $this->load->view('auth/index',$data);
             }
         }
 

@@ -36,7 +36,11 @@
 					<span class="login100-form-title p-b-32">
 						Account Login
 					</span>
-
+					<?php
+					if (isset($error)){
+						echo "<div class='error' style='background-color: red; color: white; padding: 10px; border-radius: 10px; margin-bottom: 20px;'>$error</div>";
+					}
+					?>
 					<span class="txt1 p-b-11">
 						Email
 					</span>
@@ -84,6 +88,9 @@
 	<script src="<?php echo base_url() ?>assets/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="<?php echo base_url() ?>assets/js/main.js"></script>
+	<script type="text/javascript">
+	    $('.error').css('display', 'block').delay(5000).fadeOut();
+	</script>
 
 </body>
 </html>

@@ -1,11 +1,15 @@
 <?php
-class Car_model extends CI_Model {
+class Transaction_model extends CI_Model {
 
     // deklarasi nama tabel
-    private $_table = "cars";
+    private $_table = "transactions";
 
     public function getData() {
-        return $this->db->get('cars');
+        $this->db->select('transactions.*, cars.merk, customers.nama');
+        $this->db->from('transactions');
+        $this->db->join('cars', 'cars.id = transactions.car_id', 'left');
+        $this->db->join('customers', 'customers.id = transactions.customer_id', 'left');
+        return $this->db->get();
     }
 
     public function storeData($data,$table){
@@ -24,12 +28,6 @@ class Car_model extends CI_Model {
     public function destroyData($where, $table){
         $this->db->where($where);
         $this->db->delete($table);
-    }
-
-    public function getAvailableCar(){
-        $this->db->where('status', 0); 
-        $hasil = $this->db->get('cars');
-        return $hasil;
     }
 
 }
